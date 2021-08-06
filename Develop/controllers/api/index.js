@@ -1,9 +1,11 @@
+const express = require('express');
 const router = require('express').Router();
-const userRoutes = require('./userRoutes');
-const projectRoutes = require('./projectRoutes');
+const ownerRoutes = require('./ownerRoutes');
+
 
 //TODO: change to appropriate folder names for routes
-router.use('/users', userRoutes);
-router.use('/projects', projectRoutes);
+router.use('/owners', ownerRoutes);
+
+
 
 module.exports = router;
