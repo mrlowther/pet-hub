@@ -14,16 +14,16 @@ owner.init(
       autoIncrement: true,
     },
     userName: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     email: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     petName: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     preferredPark: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
   },
  

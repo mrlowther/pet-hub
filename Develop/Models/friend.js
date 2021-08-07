@@ -1,8 +1,7 @@
 
 
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('./develop/config/connection');
-
+const sequelize = require("../config/connection");
 class friend extends Model {}
 
 friend.init(
@@ -14,25 +13,25 @@ friend.init(
       autoIncrement: true,
     },
     petName: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     animalType: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     animalBreed: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     animalSize: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     animalTemperament: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
     },  
     activityLevel: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
     },
     playsWithOthers: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
     },
   },
     {
