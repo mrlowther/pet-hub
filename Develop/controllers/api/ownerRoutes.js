@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const db = require('../../models');
 
-router.get("/",(req,res) => {
-    console.log(req.method,req.url)
-    res.send("Welcome to Pet Hub!")
-    });
+// router.get("/",(req,res) => {
+//     console.log(req.method,req.url)
+//     res.send("Welcome to Pet Hub!")
+//     });
 
 router.get('/', (req, res)=>{
     db.Owner.findAll({

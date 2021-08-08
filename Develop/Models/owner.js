@@ -30,7 +30,7 @@ owner.init(
     {
     sequelize,
     freezeTableName: true,
-    underscored: true,
+    // underscored: true,
     modelName: 'owner',
     }
 );
