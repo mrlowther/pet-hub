@@ -1,6 +1,8 @@
-use PETS_db;
 
-insert into owner (userName,email,petName,preferredPark)
+
+use pets_db;
+
+insert into owners (userName,email,petName,preferredPark)
 
 VALUES 
 ("Michael","michael@michael.com","JoJo","Westcrest Park"),

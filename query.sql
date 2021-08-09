@@ -1,5 +1,5 @@
-use PETS_db;
+use pets_db;
 
-SELECT owner.userName,owner.email,owner.petName,friend.animalType,friend.animalBreed,friend.animalSize,friend.animalTemperament,friend.activityLevel,friend.playsWithOthers,owner.preferredPark
-FROM owner
-JOIN friend ON owner.petName = friend.petName; 
+SELECT owners.userName,owners.email,owners.petName,friend.animalType,friend.animalBreed,friend.animalSize,friend.animalTemperament,friend.activityLevel,friend.playsWithOthers,owners.preferredPark
+FROM owners
+JOIN friend ON owners.petName = friend.petName; 
