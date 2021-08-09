@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-md-6">
+    <h2><span style='font-size:100px;'>&#128054;</span>Your Info <span style='font-size:100px;'>&#128169;</span></h2>
+<div>
+  
+    {{#each posts}}
+      <span>{{title}} Posted by {{user.name}} </span>
+    {{/each}}
+  </div>
+    <form class="form input-form">
+      <div class="form-group">
+        <label for="username-input">username:</label>
+        <input class="form-input" type="text" id="username-input" />
+      </div>
+      <div class="form-group">
+        <label for="email-input">email:</label>
+        <input class="form-input" type="email" id="email-input" />
+      </div>
+
+  <form class="form input-form">
+      <div class="form-group">
+        <label for="dogBreed-input">dog breed:</label>
+        <input class="form-input" type="text" id="dogBreed-input" />
+      </div>
+      <div class="form-group">
+        <label for="dogName-input">dog name:</label>
+        <input class="form-input" type="text" id="dogName-input" />
+      </div>
+
+    <form class="form input-form">
+      <div class="form-group">
+        <label for="dogSize-input">dog Size:</label>
+        <input class="form-input" type="text" id="dogSize-input" />
+      </div>
+      <div class="form-group">
+        <label for="temperament-input">dog temperament:</label>
+        <input class="form-input" type="text" id="temperament-input" />
+      </div>
+
+  <form class="form input-form">
+      <div class="form-group">
+        <label for="activityLevel-input">activity level:</label>
+        <input class="form-input" type="text" id="activityLevel-input" />
+      </div>
+      <div class="form-group">
+        <label for="playsWellWithOthers-input">Plays Well With Others:</label>
+        <input class="form-input" type="boolean" id="playsWellWithOthers-input" />
+      </div>
+  <div class="form-group">
+        <label for="preferredPark-input">Preferred Park:</label>
+        <input class="form-input" type="text" id="preferredPark-input" />
+      </div>
+      
+  <div class="form-group">
+        <label for="dogImage-input">Cute Dog Picture Link:</label>
+        <input class="form-input" type="img" id="dogImage-input" />
+      </div>
+    
+    <button class="btn btn-primary" type="submit">Submit</button>
+        <a href="/info">Submit your pet information!</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="./js/input.js"></script>
+  
+
+
