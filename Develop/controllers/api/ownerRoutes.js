@@ -9,12 +9,12 @@ const db = require('../../models');
 
 router.get('/', (req, res)=>{
     db.Owner.findAll({
-        // include: [
-        //     {
-        //         model:db.Friend,
-        //         // include:{}
-        //     }
-        // ]
+        include: [
+            {
+                model:db.Friend,
+                // include:{}
+            }
+        ]
     }).then(ownerData=>{
         res.json(ownerData);
     }).catch(err=>{
