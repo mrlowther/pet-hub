@@ -14,7 +14,7 @@ router.get('/', (req, res)=>{
              error:err
          })
      })
-    })
+})
 
 
 
@@ -23,25 +23,25 @@ router.get('/', (req, res)=>{
 //     res.send("Welcome to Pet Hub!")
 //     });
 
-//router.get('/', (req, res)=>{
-    //db.Owner.findAll({
-        // include: [
-        //     {
-        //         model:db.Friend,
-        //         // include:{}
-        //     }
-        // ]
-    //}).then(ownerData=>{
-        //res.json(ownerData);
-    //}).catch(err=>{
-        //console.log(err);
-       // res.status(500).json({
-            //message:"Error!",
-            //error:err
-        //})
-    //})
+router.get('/', (req, res)=>{
+    db.Owner.findAll({
+        include: [
+            {
+                model:db.Friend,
+                // include:{}
+            }
+        ]
+    }).then(ownerData=>{
+        res.json(ownerData);
+    }).catch(err=>{
+        console.log(err);
+        res.status(500).json({
+            message:"Error!",
+            error:err
+        })
+    })
     
-//})
+})
 
 router.get('/:id', (req, res)=>{
     db.Owner.findByPk(req.params.id, {

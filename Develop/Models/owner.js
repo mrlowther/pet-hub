@@ -5,7 +5,7 @@ class Owner extends Model {}
 
 Owner.init(
   {
-    username: {
+    userName: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true
@@ -22,7 +22,7 @@ Owner.init(
         len: [8]
       }
     },
-    petname: {
+    petName: {
       type: DataTypes.STRING,
       allowNull: false
     },
