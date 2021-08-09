@@ -1,0 +1,10 @@
+<div class="text-center">
+  <h1>Pet-Hub</h1>
+  <div>
+    View all posts
+    {{#each posts}}
+      <span>{{title}} Posted by {{user.name}} </span>
+    {{/each}}
+  </div>
+  <a href="/newpost">+ new post</a>
+</div>

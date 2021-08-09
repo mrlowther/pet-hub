@@ -1,26 +1,30 @@
-
-
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class owner extends Model {}
+class Owner extends Model {}
 
-owner.init(
+Owner.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    userName: {
+    username: {
       type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
     },
     email: {
       type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
     },
-    petName: {
+    password: {
       type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [8]
+      }
+    },
+    petname: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
     preferredPark: {
       type: DataTypes.STRING,
@@ -29,10 +33,7 @@ owner.init(
  
     {
     sequelize,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'owner',
     }
 );
 
-module.exports = owner;
+module.exports = Owner;
