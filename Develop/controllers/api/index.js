@@ -1,5 +1,9 @@
 const express = require('express');
+<<<<<<< HEAD
+const router = require('express').Router();
+=======
 const router = express.Router();
+>>>>>>> develop
 const ownerRoutes = require('./ownerRoutes');
 
 

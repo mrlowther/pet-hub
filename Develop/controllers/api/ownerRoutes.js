@@ -1,5 +1,19 @@
 const express = require('express');
 const router = express.Router();
+<<<<<<< HEAD
+// const db = require('../../models');
+// const { User } = require('../../models');
+
+router.get('/', (req, res)=>{
+    // db.Owner.findAll().then(ownerData=>{
+    //     res.json(ownerData);
+    // }).catch(err=>{
+    //     res.status(500).json({
+    //         message:"Error!",
+    //         error:err
+    //     })
+    // })
+=======
 const db = require('../../models');
 
 // router.get("/",(req,res) => {
@@ -44,6 +58,7 @@ router.get('/:id', (req, res)=>{
             error:err
         })
     })
+>>>>>>> develop
     
 })
 
