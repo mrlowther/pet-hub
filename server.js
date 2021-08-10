@@ -33,7 +33,7 @@ app.use(session({
     })
 }))
 
-const allRoutes = require('./develop/controllers');
+const allRoutes = require('./controllers');
 app.use(allRoutes);
 
 
