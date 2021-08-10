@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const bcrypt = require("bcrypt");
 
 class Owner extends Model {}
 
@@ -33,6 +34,12 @@ Owner.init(
  
     {
     sequelize,
+    hooks:{
+      beforeCreate: ownerData=>{
+        ownerData.password = bcrypt.hashSync(ownerData.password,10);
+        return ownerData;
+      }
+    }
     }
 );
 
