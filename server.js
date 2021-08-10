@@ -7,7 +7,7 @@ const db = require("./develop/models")
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 
 
