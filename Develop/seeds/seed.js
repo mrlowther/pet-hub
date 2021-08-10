@@ -63,7 +63,9 @@ const seedDb = async ()=>{
             petName:"Rapinoe",
             preferredPark:"Dr. Jose Rizal Park"
         },
-    ])
+    ], {
+        individualHooks:true
+    })
     await db.Friend.bulkCreate([
         {
             name:"JoJo",

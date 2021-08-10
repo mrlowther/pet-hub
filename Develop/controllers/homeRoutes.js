@@ -37,6 +37,7 @@ router.get('/profile', (req, res) => {
     //   res.redirect('/dashboard');
     //   return;
     // }
+
   
     res.render('neighbourhood');
   });
@@ -51,4 +52,7 @@ router.get('/profile', (req, res) => {
     res.render('input');
   });
 
+  router.get('/matches', (req, res) => {
+    res.render('matches');
+  })
   module.exports = router; 

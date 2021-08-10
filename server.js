@@ -19,6 +19,20 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 // app.use(express.static(path.join(__dirname, 'public')));
 
+
+const session = require("express-session");
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    saveUninitialized: true,
+    cookie: {
+        maxAge: 1000*60*60*2
+    },
+    store: new SequelizeStore({
+        db: sequelize,
+    })
+}))
+
 const allRoutes = require('./develop/controllers');
 app.use(allRoutes);
 
