@@ -1,5 +1,5 @@
-const db = require("../../models");
-const sequelize = require("../../config/connection");
+const db = require("../models");
+const sequelize = require("../config/connection");
 
 console.log(db);
 console.log(sequelize);
