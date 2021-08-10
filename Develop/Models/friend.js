@@ -1,44 +1,35 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require("../config/connection");
-class friend extends Model {}
+class Friend extends Model {}
 
-friend.init(
+Friend.init(
   {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   primaryKey: true,
-    //   autoIncrement: true,
-    // },
-    petName: {
+    name: {
       type: DataTypes.STRING,
     },
-    animalType: {
+    type: {
       type: DataTypes.STRING,
     },
-    animalBreed: {
+    breed: {
       type: DataTypes.STRING,
     },
-    animalSize: {
+    size: {
       type: DataTypes.STRING,
     },
-    animalTemperament: {
+    temperament: {
         type: DataTypes.STRING,
     },  
-    activityLevel: {
+    activitylevel: {
         type: DataTypes.STRING,
     },
-    playsWithOthers: {
+    playswithothers: {
         type: DataTypes.STRING,
     },
   },
     {
     sequelize,
-    freezeTableName: true,
-    // underscored: true,
-    modelName: 'friend',
     }
 );
 
 
-module.exports = friend;
+module.exports = Friend;
