@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const sequelize = require("./Develop/config/connection");
+const sequelize = require("./config/connection");
 const path = require("path");
-const db = require("./develop/models")
+const db = require("./models")
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 
