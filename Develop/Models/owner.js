@@ -24,7 +24,7 @@ Owner.init(
     },
     petName: {
       type: DataTypes.STRING,
-      allowNull: false
+      // allowNull: false
     },
     preferredPark: {
       type: DataTypes.STRING,
