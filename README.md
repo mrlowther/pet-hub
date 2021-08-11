@@ -10,6 +10,8 @@
 
 ## mock-up
 
+![image](https://user-images.githubusercontent.com/84544540/128965788-68acebef-818d-46cc-a5b4-975cb09be2fc.png)
+
 ![image](https://user-images.githubusercontent.com/84544540/128965710-a9ec1073-86da-4f39-a547-6b8e56f4df11.png)
 
 
