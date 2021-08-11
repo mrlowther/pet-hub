@@ -10,6 +10,9 @@
 
 ## mock-up
 
+![image](https://user-images.githubusercontent.com/84544540/128965710-a9ec1073-86da-4f39-a547-6b8e56f4df11.png)
+
+
 ## technology
 * Node/Express Web Server
 * MySQL Database with Sequelize
