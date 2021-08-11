@@ -24,9 +24,10 @@
 
         <a href="/">neighbourhood</a> |
         {{#if logged_in}}
+        <a href="/logout">logout</a>
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">logout</a>
         {{/if}}
       </nav>
     </header>
