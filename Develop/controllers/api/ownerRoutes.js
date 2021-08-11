@@ -102,4 +102,30 @@ router.get('/:id', (req, res)=>{
     
 })
 
+// router.delete("/:id",(req,res)=>{
+//     if(!req.session?.user?.id){
+//         res.status(401).json({message:"please login first."})
+//     } else {
+//        db.Owner.destroy({
+//            where:{
+//                id:req.session.user.id
+//            }
+//        }).then(delOwner=>{
+//            if(delOwner){
+//                res.json({
+//                    message:"Owner deleted :("
+//                });
+//             } else {
+//                 res.status(400).json({message:"Owner not deleted, it either does not exist or you did not create it."})
+//             }
+//        }).catch(err=>{
+//         console.log(err)
+//         res.status(500).json({
+//             message:"Oh no!",
+//             error:err
+//         })
+//     })
+//     }
+// })
+
 module.exports = router;
